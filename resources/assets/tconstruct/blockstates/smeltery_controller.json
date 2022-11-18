@@ -5,18 +5,19 @@
         "model": "orientable",
         "textures": {
             "particle": "#side",
-            "top": "tconstruct:blocks/smeltery/seared_brick",
-            "side": "#top"
+            "top": "tconstruct:blocks/smeltery/smeltery/top",
+            "bottom": "tconstruct:blocks/smeltery/smeltery/bottom",
+            "side": "tconstruct:blocks/smeltery/smeltery/side"
         },
         "uvlock": true
     },
 	"variants": {
         "active": {
             "true": {
-                "textures": { "front": "tconstruct:blocks/smeltery/smeltery_active" }
+                "textures": { "front": "tconstruct:blocks/smeltery/smeltery/active" }
             },
             "false": {
-                "textures": { "front": "tconstruct:blocks/smeltery/smeltery_inactive" }
+                "textures": { "front": "tconstruct:blocks/smeltery/smeltery/inactive" }
             }
         },
         "facing": {
@@ -37,9 +38,9 @@
             "model": "orientable",
             "textures": {
                 "particle": "#side",
-                "top": "tconstruct:blocks/smeltery/seared_brick",
+                "top": "tconstruct:blocks/smeltery/smeltery/side",
                 "side": "#top",
-                "front": "tconstruct:blocks/smeltery/smeltery_inactive"
+                "front": "tconstruct:blocks/smeltery/smeltery/inactive"
             }
         }
     }

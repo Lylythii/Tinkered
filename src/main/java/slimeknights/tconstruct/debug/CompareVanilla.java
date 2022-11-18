@@ -63,52 +63,52 @@ public class CompareVanilla extends CommandBase {
       throws CommandException {
     ImmutableList<Material> woodMaterials = ImmutableList.of(TinkerMaterials.wood, TinkerMaterials.wood, TinkerMaterials.wood);
     ImmutableList<Material> stoneMaterials = ImmutableList.of(TinkerMaterials.wood, TinkerMaterials.stone, TinkerMaterials.stone);
-    ImmutableList<Material> ironMaterials = ImmutableList.of(TinkerMaterials.wood, TinkerMaterials.iron, TinkerMaterials.iron);
+    ImmutableList<Material> ironMaterials = ImmutableList.of(TinkerMaterials.wood, TinkerMaterials.cast_iron, TinkerMaterials.cast_iron);
     ImmutableList<Material> cobaltMaterials = ImmutableList.of(TinkerMaterials.wood, TinkerMaterials.cobalt, TinkerMaterials.cobalt);
     ImmutableList<Material> manyMaterials = ImmutableList.of(TinkerMaterials.wood, TinkerMaterials.manyullyn, TinkerMaterials.manyullyn);
     // Pickaxe
     ItemStack wood = TinkerHarvestTools.pickaxe.buildItem(woodMaterials);
     ItemStack stone = TinkerHarvestTools.pickaxe.buildItem(stoneMaterials);
-    ItemStack iron = TinkerHarvestTools.pickaxe.buildItem(ironMaterials);
+    ItemStack cast_iron = TinkerHarvestTools.pickaxe.buildItem(ironMaterials);
     ItemStack extra = TinkerHarvestTools.pickaxe.buildItem(cobaltMaterials);
 
     testTools(Blocks.COBBLESTONE,
-              wood, stone, iron, extra,
+              wood, stone, cast_iron, extra,
               new ItemStack(Items.WOODEN_PICKAXE), new ItemStack(Items.STONE_PICKAXE), new ItemStack(Items.IRON_PICKAXE),
               new ItemStack(Items.DIAMOND_PICKAXE), new ItemStack(Items.GOLDEN_PICKAXE));
 
     wood = TinkerHarvestTools.shovel.buildItem(woodMaterials);
     stone = TinkerHarvestTools.shovel.buildItem(stoneMaterials);
-    iron = TinkerHarvestTools.shovel.buildItem(ironMaterials);
+    cast_iron = TinkerHarvestTools.shovel.buildItem(ironMaterials);
     extra = TinkerHarvestTools.shovel.buildItem(cobaltMaterials);
 
     testTools(Blocks.DIRT,
-              wood, stone, iron, extra,
+              wood, stone, cast_iron, extra,
               new ItemStack(Items.WOODEN_SHOVEL), new ItemStack(Items.STONE_SHOVEL), new ItemStack(Items.IRON_SHOVEL),
               new ItemStack(Items.DIAMOND_SHOVEL), new ItemStack(Items.GOLDEN_SHOVEL));
 
     wood = TinkerHarvestTools.hatchet.buildItem(woodMaterials);
     stone = TinkerHarvestTools.hatchet.buildItem(stoneMaterials);
-    iron = TinkerHarvestTools.hatchet.buildItem(ironMaterials);
+    cast_iron = TinkerHarvestTools.hatchet.buildItem(ironMaterials);
     extra = TinkerHarvestTools.hatchet.buildItem(cobaltMaterials);
 
     testTools(Blocks.LOG,
-              wood, stone, iron, extra,
+              wood, stone, cast_iron, extra,
               new ItemStack(Items.WOODEN_AXE), new ItemStack(Items.STONE_AXE), new ItemStack(Items.IRON_AXE),
               new ItemStack(Items.DIAMOND_AXE), new ItemStack(Items.GOLDEN_AXE));
 
     wood = TinkerMeleeWeapons.broadSword.buildItem(woodMaterials);
     stone = TinkerMeleeWeapons.broadSword.buildItem(stoneMaterials);
-    iron = TinkerMeleeWeapons.broadSword.buildItem(ironMaterials);
+    cast_iron = TinkerMeleeWeapons.broadSword.buildItem(ironMaterials);
     extra = TinkerMeleeWeapons.broadSword.buildItem(manyMaterials);
 
     testTools(Blocks.MELON_BLOCK,
-              wood, stone, iron, extra,
+              wood, stone, cast_iron, extra,
               new ItemStack(Items.WOODEN_SWORD), new ItemStack(Items.STONE_SWORD), new ItemStack(Items.IRON_SWORD),
               new ItemStack(Items.DIAMOND_SWORD), new ItemStack(Items.GOLDEN_SWORD));
   }
 
-  protected void testTools(Block block, ItemStack wood, ItemStack stone, ItemStack iron, ItemStack extra1, ItemStack vanillaWood, ItemStack vanillaStone, ItemStack vanillaIron, ItemStack vanillaDiamond, ItemStack vanillaGold) {
+  protected void testTools(Block block, ItemStack wood, ItemStack stone, ItemStack cast_iron, ItemStack extra1, ItemStack vanillaWood, ItemStack vanillaStone, ItemStack vanillaIron, ItemStack vanillaDiamond, ItemStack vanillaGold) {
     // setup output
     File file = new File("test/" + wood.getItem().getClass().getSimpleName() + ".html");
     PrintWriter pw;
@@ -136,8 +136,8 @@ public class CompareVanilla extends CommandBase {
     performToolTests(pw, block, wood, vanillaWood);
     pw.println(genSection("Stone", "#837E7C"));
     performToolTests(pw, block, stone, vanillaStone);
-    pw.println(genSection("Iron", "#CECECE"));
-    performToolTests(pw, block, iron, vanillaIron);
+    pw.println(genSection("CastIron", "#CECECE"));
+    performToolTests(pw, block, cast_iron, vanillaIron);
     pw.println(genSection("Diamond", "#5CB3FF"));
     performToolTests(pw, block, extra1, vanillaDiamond);
     pw.println(genSection("Gold", "#EAC117"));

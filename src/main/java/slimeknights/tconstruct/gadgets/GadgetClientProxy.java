@@ -17,9 +17,7 @@ import javax.annotation.Nonnull;
 
 import slimeknights.tconstruct.common.ClientProxy;
 import slimeknights.tconstruct.gadgets.block.BlockSlimeChannel;
-import slimeknights.tconstruct.gadgets.client.RenderFancyItemFrame;
 import slimeknights.tconstruct.gadgets.client.RenderThrowball;
-import slimeknights.tconstruct.gadgets.entity.EntityFancyItemFrame;
 import slimeknights.tconstruct.gadgets.entity.EntityThrowball;
 import slimeknights.tconstruct.gadgets.item.ItemThrowball;
 import slimeknights.tconstruct.library.Util;
@@ -69,41 +67,13 @@ public class GadgetClientProxy extends ClientProxy {
     ModelLoader.setCustomStateMapper(TinkerGadgets.slimeChannel, new PropertyStateMapper("slime_channel", BlockSlimeChannel.SIDE, BlockSlimeChannel.TYPE));
 
     // Blocks
-    registerItemModel(TinkerGadgets.stoneTorch);
-    registerItemModel(TinkerGadgets.stoneLadder);
     registerItemModel(TinkerGadgets.punji);
     registerItemModel(TinkerGadgets.rack);
 
     registerItemModel(TinkerGadgets.woodRail);
     registerItemModel(TinkerGadgets.woodRailTrapdoor);
 
-    registerItemModel(TinkerGadgets.woodenHopper);
-
     registerItemModel(TinkerGadgets.slimeChannel); //tinted for variants
-
-    registerItemBlockMeta(TinkerGadgets.driedClay);
-    registerItemBlockMeta(TinkerGadgets.brownstone);
-
-    // slabs
-    registerItemBlockMeta(TinkerGadgets.driedClaySlab);
-    registerItemBlockMeta(TinkerGadgets.brownstoneSlab);
-    registerItemBlockMeta(TinkerGadgets.brownstoneSlab2);
-
-    // stairs
-    registerItemModel(TinkerGadgets.driedClayStairs);
-    registerItemModel(TinkerGadgets.driedBrickStairs);
-    registerItemModel(TinkerGadgets.brownstoneStairsSmooth);
-    registerItemModel(TinkerGadgets.brownstoneStairsRough);
-    registerItemModel(TinkerGadgets.brownstoneStairsPaver);
-    registerItemModel(TinkerGadgets.brownstoneStairsBrick);
-    registerItemModel(TinkerGadgets.brownstoneStairsBrickCracked);
-    registerItemModel(TinkerGadgets.brownstoneStairsBrickFancy);
-    registerItemModel(TinkerGadgets.brownstoneStairsBrickSquare);
-    registerItemModel(TinkerGadgets.brownstoneStairsBrickTriangle);
-    registerItemModel(TinkerGadgets.brownstoneStairsBrickSmall);
-    registerItemModel(TinkerGadgets.brownstoneStairsRoad);
-    registerItemModel(TinkerGadgets.brownstoneStairsTile);
-    registerItemModel(TinkerGadgets.brownstoneStairsCreeper);
 
     // Items
     registerItemModel(TinkerGadgets.slimeSling);
@@ -116,18 +86,6 @@ public class GadgetClientProxy extends ClientProxy {
     }
 
     // Entity
-    RenderingRegistry.registerEntityRenderingHandler(EntityFancyItemFrame.class, RenderFancyItemFrame.FACTORY);
-
-    for(EntityFancyItemFrame.FrameType type : EntityFancyItemFrame.FrameType.values()) {
-      for(boolean withMap : new boolean[]{true, false}) {
-        String variant = RenderFancyItemFrame.getVariant(type, withMap);
-        ModelResourceLocation loc = Util.getModelResource("fancy_frame", variant);
-        ModelLoader.registerItemVariants(TinkerGadgets.fancyFrame, loc);
-        if(!withMap) {
-          ModelLoader.setCustomModelResourceLocation(TinkerGadgets.fancyFrame, type.ordinal(), loc);
-        }
-      }
-    }
     RenderingRegistry.registerEntityRenderingHandler(EntityThrowball.class, RenderThrowball.FACTORY);
 
 

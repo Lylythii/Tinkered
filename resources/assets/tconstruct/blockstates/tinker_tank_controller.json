@@ -15,7 +15,7 @@
 			"true": { "model": "tconstruct:tinker_tank_active" },
 			"false": {
 				"textures": {
-					"top": "tconstruct:blocks/smeltery/seared_brick",
+					"top": "tconstruct:blocks/smeltery/seared/brick",
 					"front": "tconstruct:blocks/smeltery/tinker_tank",
 					"side": "#top"
 				}
@@ -23,7 +23,7 @@
 		},
 		"inventory": [{
 			"textures": {
-				"top": "tconstruct:blocks/smeltery/seared_brick",
+				"top": "tconstruct:blocks/smeltery/seared/brick",
 				"front": "tconstruct:blocks/smeltery/tinker_tank",
 				"side": "#top"
 			}

@@ -57,28 +57,10 @@ public class SmelteryClientProxy extends ClientProxy {
     registerItemModel(TinkerSmeltery.faucet);
     registerItemModel(TinkerSmeltery.channel);
     registerItemModel(TinkerSmeltery.searedGlass);
-    registerItemModel(TinkerSmeltery.searedFurnaceController);
     registerItemModel(TinkerSmeltery.tinkerTankController);
     registerItemBlockMeta(TinkerSmeltery.searedBlock);
     registerItemBlockMeta(TinkerSmeltery.castingBlock);
 
-    // slabs
-    registerItemBlockMeta(TinkerSmeltery.searedSlab);
-    registerItemBlockMeta(TinkerSmeltery.searedSlab2);
-
-    // stairs
-    registerItemModel(TinkerSmeltery.searedStairsStone);
-    registerItemModel(TinkerSmeltery.searedStairsCobble);
-    registerItemModel(TinkerSmeltery.searedStairsPaver);
-    registerItemModel(TinkerSmeltery.searedStairsBrick);
-    registerItemModel(TinkerSmeltery.searedStairsBrickCracked);
-    registerItemModel(TinkerSmeltery.searedStairsBrickFancy);
-    registerItemModel(TinkerSmeltery.searedStairsBrickSquare);
-    registerItemModel(TinkerSmeltery.searedStairsBrickTriangle);
-    registerItemModel(TinkerSmeltery.searedStairsBrickSmall);
-    registerItemModel(TinkerSmeltery.searedStairsRoad);
-    registerItemModel(TinkerSmeltery.searedStairsTile);
-    registerItemModel(TinkerSmeltery.searedStairsCreeper);
 
     // drains
     Item drain = Item.getItemFromBlock(TinkerSmeltery.smelteryIO);

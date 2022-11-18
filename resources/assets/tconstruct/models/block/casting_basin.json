@@ -1,11 +1,11 @@
 {
     "textures": {
-        "top": "tconstruct:blocks/smeltery/blockcast_top",
-        "side": "tconstruct:blocks/smeltery/blockcast_side",
-        "leg": "tconstruct:blocks/smeltery/blockcast_side",
-        "bottom": "tconstruct:blocks/smeltery/blockcast_bottom",
-        "legBottom": "tconstruct:blocks/smeltery/blockcast_bottom",
-        "particle": "tconstruct:blocks/smeltery/blockcast_top"
+        "top": "tconstruct:blocks/smeltery/casting_basin/top",
+        "side": "tconstruct:blocks/smeltery/casting_basin/side",
+        "leg": "tconstruct:blocks/smeltery/casting_basin/side",
+        "bottom": "tconstruct:blocks/smeltery/casting_basin/bottom",
+        "legBottom": "tconstruct:blocks/smeltery/casting_basin/bottom",
+        "particle": "tconstruct:blocks/smeltery/casting_basin/top"
     },
 	"elements": [
         {

@@ -7,7 +7,6 @@ import slimeknights.tconstruct.tools.traits.TraitAlien;
 import slimeknights.tconstruct.tools.traits.TraitAquadynamic;
 import slimeknights.tconstruct.tools.traits.TraitAridiculous;
 import slimeknights.tconstruct.tools.traits.TraitAutosmelt;
-import slimeknights.tconstruct.tools.traits.TraitBaconlicious;
 import slimeknights.tconstruct.tools.traits.TraitBonusDamage;
 import slimeknights.tconstruct.tools.traits.TraitBreakable;
 import slimeknights.tconstruct.tools.traits.TraitCheap;
@@ -59,7 +58,6 @@ public class TinkerTraits {
   public static final AbstractTrait aquadynamic = new TraitAquadynamic();
   public static final AbstractTrait aridiculous = new TraitAridiculous();
   public static final AbstractTrait autosmelt = new TraitAutosmelt();
-  public static final AbstractTrait baconlicious = new TraitBaconlicious();
   public static final AbstractTrait cheap = new TraitCheap();
   public static final AbstractTrait cheapskate = new TraitCheapskate();
   public static final AbstractTrait coldblooded = new TraitColdblooded();

@@ -37,7 +37,8 @@ tile.tconstruct.metal.cobalt.name=Block of Cobalt
 tile.tconstruct.metal.ardite.name=Block of Ardite
 tile.tconstruct.metal.manyullyn.name=Block of Manyullyn
 tile.tconstruct.metal.knightslime.name=Block of Knightslime
-tile.tconstruct.metal.pigiron.name=Block of Pigiron
+tile.tconstruct.metal.pig_iron.name=Block of Pig Iron
+tile.tconstruct.metal.wrought_iron.name=Block of Wrought Iron
 tile.tconstruct.metal.alubrass.name=Block of Aluminium Brass
 tile.tconstruct.metal.silky_jewel.name=Silky Block of Jewel
 
@@ -255,28 +256,45 @@ tile.tconstruct.brownstone_stairs_creeper.name=Brownstone Creeperface Stairs
 item.tconstruct.book.name=Materials and You
 item.tconstruct.book.tooltip=The book every Tinker needs\nby Skyla
 
-item.tconstruct.edible.bacon.name=Bacon
-item.tconstruct.edible.slimeball_blue.name=Slimeball
-item.tconstruct.edible.slimeball_purple.name=Slimeball
+item.tconstruct.edible.slimeball_blue.name=Blue Slimeball
+item.tconstruct.edible.slimeball_purple.name=Purple Slimeball
 item.tconstruct.edible.slimeball_blood.name=Coagulated Blood
-item.tconstruct.edible.slimeball_magma.name=Slimeball
-item.tconstruct.edible.slimeball_pink.name=Slimeball
+item.tconstruct.edible.slimeball_magma.name=Magma Slimeball
+item.tconstruct.edible.slimeball_pink.name=Pink Slimeball
+
+item.tconstruct.edible.jerky_monster.name=Rotten Flesh Jerky
+item.tconstruct.edible.jerky_spider.name=Spider Eye Jerky
+
 item.tconstruct.edible.jerky_beef.name=Beef Jerky
-item.tconstruct.edible.jerky_chicken.name=Chicken Jerky
 item.tconstruct.edible.jerky_pork.name=Bacon Jerky
+item.tconstruct.edible.jerky_poultry.name=Poultry Jerky
 item.tconstruct.edible.jerky_mutton.name=Mutton Jerky
+item.tconstruct.edible.jerky_bear.name=Bear Jerky
+item.tconstruct.edible.jerky_calamari.name=Calamari Jerky
+item.tconstruct.edible.jerky_horse.name=Horse Jerky
+item.tconstruct.edible.jerky_fowl.name=Fowl Jerky
+item.tconstruct.edible.jerky_venison.name=Venison Jerky
+item.tconstruct.edible.jerky_canine.name=Canine Jerky
 item.tconstruct.edible.jerky_rabbit.name=Rabbit Jerky
+item.tconstruct.edible.jerky_mongoose.name=Mongoose Jerky
+item.tconstruct.edible.jerky_gran_feline.name=Gran Feline Jerky
+item.tconstruct.edible.jerky_camelid.name=Camelid Jerky
+
 item.tconstruct.edible.jerky_fish.name=Fish Jerky
 item.tconstruct.edible.jerky_salmon.name=Salmon Jerky
 item.tconstruct.edible.jerky_clownfish.name=Clownfish Jerky
 item.tconstruct.edible.jerky_pufferfish.name=Fugu Jerky
-item.tconstruct.edible.jerky_monster.name=Monster Jerky
+
 item.tconstruct.edible.slimedrop_green.name=Gelatinous Slime Drop
 item.tconstruct.edible.slimedrop_blue.name=Gelatinous Slime Drop
 item.tconstruct.edible.slimedrop_purple.name=Gelatinous Slime Drop
 item.tconstruct.edible.slimedrop_blood.name=Coagulated Blood Drop
 item.tconstruct.edible.slimedrop_magma.name=Gelatinous Slime Drop
 
+		
+		
+		
+		
 item.tconstruct.materials.seared_brick.name=Seared Brick
 item.tconstruct.materials.mud_brick.name=Mud Brick
 item.tconstruct.materials.mud_brick.tooltip=Building blocks for small and big
@@ -310,15 +328,17 @@ item.tconstruct.ingots.ardite.name=Ardite Ingot
 item.tconstruct.ingots.manyullyn.name=Manyullyn Ingot
 item.tconstruct.ingots.knightslime.name=Knightslime Ingot
 item.tconstruct.ingots.knightslime.tooltip=Slimy yet metallic but also stone? Fascinating!
-item.tconstruct.ingots.pigiron.name=Pigiron Ingot
-item.tconstruct.ingots.pigiron.tooltip=Oink!
+item.tconstruct.ingots.pig_iron.name=Pig Iron Ingot
+item.tconstruct.ingots.pig_iron.tooltip=Oink!
+item.tconstruct.ingots.wrought_iron.name=Wrought Iron Ingot
 item.tconstruct.ingots.alubrass.name=Aluminium Brass Ingot
 
 item.tconstruct.nuggets.cobalt.name=Cobalt Nugget
 item.tconstruct.nuggets.ardite.name=Ardite Nugget
 item.tconstruct.nuggets.manyullyn.name=Manyullyn Nugget
 item.tconstruct.nuggets.knightslime.name=Knightslime Nugget
-item.tconstruct.nuggets.pigiron.name=Pigiron Nugget
+item.tconstruct.nuggets.pig_iron.name=Pig Iron Nugget
+item.tconstruct.nuggets.wrought_iron.name=Wrought Iron Nugget
 item.tconstruct.nuggets.alubrass.name=Aluminium Brass Nugget
 
 item.tconstruct.pattern.blank=Blank Pattern
@@ -486,9 +506,10 @@ fluid.tconstruct.stone.name=Seared Stone
 fluid.tconstruct.obsidian.name=Molten Obsidian
 fluid.tconstruct.clay.name=Molten Clay
 fluid.tconstruct.dirt.name=Liquid Dirt
-fluid.tconstruct.iron.name=Molten Iron
+fluid.tconstruct.cast_iron.name=Molten Cast Iron
 fluid.tconstruct.gold.name=Molten Gold
-fluid.tconstruct.pigiron.name=Molten Pigiron
+fluid.tconstruct.pig_iron.name=Molten Pig Iron
+fluid.tconstruct.wrought_iron.name=Molten Wrought Iron
 fluid.tconstruct.cobalt.name=Molten Cobalt
 fluid.tconstruct.ardite.name=Molten Ardite
 fluid.tconstruct.manyullyn.name=Molten Manyullyn
@@ -503,6 +524,8 @@ fluid.tconstruct.brass.name=Molten Brass
 fluid.tconstruct.copper.name=Molten Copper
 fluid.tconstruct.tin.name=Molten Tin
 fluid.tconstruct.bronze.name=Molten Bronze
+fluid.tconstruct.bismuth_bronze.name=Molten Bismuth Bronze
+fluid.tconstruct.black_bronze.name=Molten Black Bronze
 fluid.tconstruct.zinc.name=Molten Zinc
 fluid.tconstruct.lead.name=Molten Lead
 fluid.tconstruct.nickel.name=Molten Nickel
@@ -546,10 +569,13 @@ material.magmaslime.name=Magma Slime
 material.ardite.name=Ardite
 material.cobalt.name=Cobalt
 material.manyullyn.name=Manyullyn
-material.iron.name=Iron
-material.pigiron.name=Pig Iron
+material.cast_iron.name=Cast Iron
+material.pig_iron.name=Pig Iron
+material.wrought_iron.name=Wrought Iron
 material.copper.name=Copper
 material.bronze.name=Bronze
+material.bismuth_bronze.name=Bismuth Bronze
+material.black_bronze.name=Black Bronze
 material.lead.name=Lead
 material.silver.name=Silver
 material.electrum.name=Electrum
@@ -860,7 +886,7 @@ tooltip.tank.holdShift=Hold §e§oShift§r§7 for buckets
 # general strings used in GUIs, tooltips and other display stuff
 
 ui.mininglevel.stone=Stone
-ui.mininglevel.iron=Iron
+ui.mininglevel.cast_iron=Cast Iron
 #ui.mininglevel.redstone=Redstone # replaced with diamond
 ui.mininglevel.diamond=Diamond
 ui.mininglevel.obsidian=Obsidian

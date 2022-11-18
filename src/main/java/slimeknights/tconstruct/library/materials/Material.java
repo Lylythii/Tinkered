@@ -392,7 +392,9 @@ public class Material extends RecipeMatchRegistry {
     if(stack.isEmpty()) {
       this.shardItem = ItemStack.EMPTY;
     }
-    else {
+	//Something is broken here
+    /*
+	else {
       Optional<RecipeMatch.Match> matchOptional = matches(stack);
       if(matchOptional.isPresent()) {
         RecipeMatch.Match match = matchOptional.get();
@@ -416,6 +418,7 @@ public class Material extends RecipeMatchRegistry {
                                 identifier);
       }
     }
+	*/
   }
 
   public ItemStack getShard() {

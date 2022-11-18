@@ -35,21 +35,16 @@ public class TinkerIntegration extends TinkerPulse {
 
   @Subscribe
   public void preInit(FMLPreInitializationEvent event) {
-    integrate(TinkerMaterials.wood, "plankWood");
+    integrate(TinkerMaterials.wood, "lumber");
     integrate(TinkerMaterials.stone);
     integrate(TinkerMaterials.flint);
-    integrate(TinkerMaterials.cactus);
     integrate(TinkerMaterials.bone);
     integrate(TinkerMaterials.obsidian, TinkerFluids.obsidian);
-    integrate(TinkerMaterials.prismarine);
-    integrate(TinkerMaterials.endstone);
-    integrate(TinkerMaterials.paper);
-    integrate(TinkerMaterials.sponge);
-    integrate(TinkerMaterials.firewood);
 
     // listed here so it's the first in the toolforge listing
-    integrate(TinkerMaterials.iron, TinkerFluids.iron, "Iron").toolforge();
-    integrate(TinkerMaterials.pigiron, TinkerFluids.pigIron, "Pigiron").toolforge();
+    integrate(TinkerMaterials.cast_iron, TinkerFluids.cast_iron, "CastIron").toolforge();
+    integrate(TinkerMaterials.pig_iron, TinkerFluids.pig_iron, "PigIron").toolforge();
+    integrate(TinkerMaterials.wrought_iron, TinkerFluids.wrought_iron, "WroughtIron").toolforge();
 
     integrate(TinkerMaterials.knightslime, TinkerFluids.knightslime, "Knightslime").toolforge();
     integrate(TinkerMaterials.slime, "slimecrystalGreen");
@@ -60,7 +55,6 @@ public class TinkerIntegration extends TinkerPulse {
     TinkerRegistry.integrate(new MaterialIntegration(null, TinkerFluids.alubrass, "Alubrass", "ingotCopper", "ingotAluminium")).toolforge();
 
 
-    integrate(TinkerMaterials.netherrack);
     integrate(TinkerMaterials.cobalt, TinkerFluids.cobalt, "Cobalt").toolforge();
     integrate(TinkerMaterials.ardite, TinkerFluids.ardite, "Ardite").toolforge();
     integrate(TinkerMaterials.manyullyn, TinkerFluids.manyullyn, "Manyullyn").toolforge();
@@ -68,6 +62,8 @@ public class TinkerIntegration extends TinkerPulse {
     // mod integrations
     integrate(TinkerMaterials.copper, TinkerFluids.copper, "Copper").toolforge();
     integrate(TinkerMaterials.bronze, TinkerFluids.bronze, "Bronze").toolforge();
+    integrate(TinkerMaterials.bismuth_bronze, TinkerFluids.bronze, "BismuthBronze").toolforge();
+    integrate(TinkerMaterials.black_bronze, TinkerFluids.bronze, "BlackBronze").toolforge();
     integrate(TinkerMaterials.lead, TinkerFluids.lead, "Lead").toolforge();
     integrate(TinkerMaterials.silver, TinkerFluids.silver, "Silver").toolforge();
     integrate(TinkerMaterials.electrum, TinkerFluids.electrum, "Electrum").toolforge();

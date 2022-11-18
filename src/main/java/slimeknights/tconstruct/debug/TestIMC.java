@@ -22,9 +22,9 @@ public class TestIMC {
   public static void integrateSmeltery() {
     // normal test, make sure to disable normal iron and gold during testing
     NBTTagCompound tag = new NBTTagCompound();
-    FluidRegistry.registerFluid(TinkerFluids.iron);
-    tag.setString("fluid", "iron");
-    tag.setString("ore", "Iron");
+    FluidRegistry.registerFluid(TinkerFluids.cast_iron);
+    tag.setString("fluid", "cast_iron");
+    tag.setString("ore", "cast_iron");
 
     // send the NBT to TCon
     FMLInterModComms.sendMessage("tconstruct", "integrateSmeltery", tag);
@@ -45,7 +45,7 @@ public class TestIMC {
 
     // first alloy fluid
     fluid = new NBTTagCompound();
-    fluid.setString("FluidName", "iron");
+    fluid.setString("FluidName", "cast_iron");
     fluid.setInteger("Amount", 108); // 3/4 ingot
     tagList.appendTag(fluid);
 
@@ -71,7 +71,7 @@ public class TestIMC {
 
     // first alloy fluid
     fluid = new NBTTagCompound();
-    fluid.setString("FluidName", "iron");
+    fluid.setString("FluidName", "cast_iron");
     fluid.setInteger("Amount", 108); // 3/4 ingot
     tagList.appendTag(fluid);
 

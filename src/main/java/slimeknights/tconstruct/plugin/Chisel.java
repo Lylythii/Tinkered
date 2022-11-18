@@ -9,7 +9,6 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLInterModComms;
 import slimeknights.mantle.pulsar.pulse.Pulse;
 import slimeknights.tconstruct.gadgets.TinkerGadgets;
-import slimeknights.tconstruct.gadgets.block.BlockBrownstone.BrownstoneType;
 import slimeknights.tconstruct.smeltery.TinkerSmeltery;
 import slimeknights.tconstruct.smeltery.block.BlockSeared.SearedType;
 
@@ -24,15 +23,6 @@ public class Chisel {
     for(SearedType type : SearedType.values()) {
       if(type != SearedType.COBBLE) {
         addChiselVariation(TinkerSmeltery.searedBlock, type.getMeta(), "seared_block");
-      }
-    }
-
-
-    for(BrownstoneType type : BrownstoneType.values()) {
-      // skip rough since it is a smelting recipe difference
-      if(type != BrownstoneType.ROUGH) {
-        // chisel adds its own brownstone that is functionally different and cheaper, thus the custom name
-        addChiselVariation(TinkerGadgets.brownstone, type.getMeta(), "brownstone_tconstruct");
       }
     }
   }

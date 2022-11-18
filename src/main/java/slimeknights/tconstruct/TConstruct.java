@@ -31,7 +31,6 @@ import slimeknights.tconstruct.library.book.TinkerBook;
 import slimeknights.tconstruct.library.capability.piggyback.CapabilityTinkerPiggyback;
 import slimeknights.tconstruct.library.capability.projectile.CapabilityTinkerProjectile;
 import slimeknights.tconstruct.library.utils.HarvestLevels;
-import slimeknights.tconstruct.plugin.Chisel;
 import slimeknights.tconstruct.plugin.ChiselAndBits;
 import slimeknights.tconstruct.plugin.CraftingTweaks;
 import slimeknights.tconstruct.plugin.quark.QuarkPlugin;
@@ -111,7 +110,6 @@ public class TConstruct {
 
     pulseManager.registerPulse(new AggregateModelRegistrar());
     // Plugins/Integration
-    pulseManager.registerPulse(new Chisel());
     pulseManager.registerPulse(new ChiselAndBits());
     pulseManager.registerPulse(new CraftingTweaks());
     pulseManager.registerPulse(new Waila());
@@ -179,37 +177,6 @@ public class TConstruct {
     else {
       // config syncing
       MinecraftForge.EVENT_BUS.register(new ConfigSync());
-    }
-  }
-
-
-  private static final String TINKERS_SKYBLOCK_MODID = "tinkerskyblock";
-  private static final String WOODEN_HOPPER = "wooden_hopper";
-
-  //Old version compatibility
-  @SubscribeEvent
-  public void missingItemMappings(RegistryEvent.MissingMappings<Item> event) {
-    for(RegistryEvent.MissingMappings.Mapping<Item> entry : event.getAllMappings()) {
-      @Nonnull
-      String path = entry.key.toString();
-      if(path.equals(Util.resource("bucket")) || path.equals(Util.resource("glow")) || path.equals(Util.resource("blood")) || path.equals(Util.resource("milk")) || path.equals(Util.resource("purpleslime")) || path.equals(Util.resource("blueslime")) || path.contains(Util.resource("molten"))) {
-        entry.ignore();
-      }
-
-      // wooder hopper, moved from skyblock to tic
-      if(entry.key.getResourceDomain().equals(TINKERS_SKYBLOCK_MODID) && entry.key.getResourcePath().equals(WOODEN_HOPPER)) {
-        entry.remap(Item.getItemFromBlock(TinkerGadgets.woodenHopper));
-      }
-    }
-  }
-
-  @SubscribeEvent
-  public void missingBlockMappings(RegistryEvent.MissingMappings<Block> event) {
-    for(RegistryEvent.MissingMappings.Mapping<Block> entry : event.getAllMappings()) {
-      // wooder hopper, moved from skyblock to tic
-      if(entry.key.getResourceDomain().equals(TINKERS_SKYBLOCK_MODID) && entry.key.getResourcePath().equals(WOODEN_HOPPER)) {
-        entry.remap(TinkerGadgets.woodenHopper);
-      }
     }
   }
 }

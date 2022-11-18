@@ -46,9 +46,11 @@ public class TinkerFluids extends TinkerPulse {
   public static FluidMolten obsidian;
   public static FluidMolten clay;
   public static FluidMolten dirt;
-  public static FluidMolten iron;
+  public static FluidMolten cast_iron;
+  public static FluidMolten pig_iron;
+  public static FluidMolten wrought_iron;
   public static FluidMolten gold;
-  public static FluidMolten pigIron;
+  public static FluidMolten rose_gold;
   public static FluidMolten cobalt;
   public static FluidMolten ardite;
   public static FluidMolten manyullyn;
@@ -67,6 +69,8 @@ public class TinkerFluids extends TinkerPulse {
   public static FluidMolten copper;
   public static FluidMolten tin;
   public static FluidMolten bronze;
+  public static FluidMolten bismuth_bronze;
+  public static FluidMolten black_bronze;
   public static FluidMolten zinc;
   public static FluidMolten lead;
   public static FluidMolten nickel;
@@ -84,16 +88,25 @@ public class TinkerFluids extends TinkerPulse {
     FluidRegistry.enableUniversalBucket();
 
     // Fluids for integration, getting registered by TinkerIntegration
-    iron = fluidMetal(TinkerMaterials.iron.getIdentifier(), 0xa81212);
-    iron.setTemperature(769);
+    cast_iron = fluidMetal(TinkerMaterials.cast_iron.getIdentifier(), 0xFF40494D);
+    cast_iron.setTemperature(769);
 
-    gold = fluidMetal("gold", 0xf6d609);
+	//ToDo: Make rarities match that of TFC
+    pig_iron = fluidMetal(TinkerMaterials.pig_iron);
+    pig_iron.setTemperature(600);
+    pig_iron.setRarity(EnumRarity.EPIC);
+
+    wrought_iron = fluidMetal(TinkerMaterials.wrought_iron);
+    wrought_iron.setTemperature(600);
+    wrought_iron.setRarity(EnumRarity.EPIC);
+
+    gold = fluidMetal("gold", 0xFFE4DA6A);
     gold.setTemperature(532);
     gold.setRarity(EnumRarity.RARE);
 
-    pigIron = fluidMetal(TinkerMaterials.pigiron);
-    pigIron.setTemperature(600);
-    pigIron.setRarity(EnumRarity.EPIC);
+    rose_gold = fluidMetal("rose_gold", 0xFFE4DA6A);
+    rose_gold.setTemperature(532);
+    rose_gold.setRarity(EnumRarity.RARE);
 
     cobalt = fluidMetal(TinkerMaterials.cobalt);
     cobalt.setTemperature(950);
@@ -115,25 +128,31 @@ public class TinkerFluids extends TinkerPulse {
     alubrass.setTemperature(500);
 
     // Mod Integration fluids
-    brass = fluidMetal("brass", 0xede38b);
+    brass = fluidMetal("brass", 0xFFC9974C);
     brass.setTemperature(470);
 
     copper = fluidMetal(TinkerMaterials.copper);
     copper.setTemperature(542);
 
-    tin = fluidMetal("tin", 0xc1cddc);
+    tin = fluidMetal("tin", 0xFF90A4BB);
     tin.setTemperature(350);
 
     bronze = fluidMetal(TinkerMaterials.bronze);
     bronze.setTemperature(475);
 
-    zinc = fluidMetal("zinc", 0xd3efe8);
+    bismuth_bronze = fluidMetal(TinkerMaterials.bismuth_bronze);
+    bismuth_bronze.setTemperature(475);
+
+    black_bronze = fluidMetal(TinkerMaterials.black_bronze);
+    black_bronze.setTemperature(475);
+
+    zinc = fluidMetal("zinc", 0xFFBBB9C4);
     zinc.setTemperature(375);
 
     lead = fluidMetal(TinkerMaterials.lead);
     lead.setTemperature(400);
 
-    nickel = fluidMetal("nickel", 0xc8d683);
+    nickel = fluidMetal("nickel", 0xFF4E4E3C);
     nickel.setTemperature(727);
 
     silver = fluidMetal(TinkerMaterials.silver);

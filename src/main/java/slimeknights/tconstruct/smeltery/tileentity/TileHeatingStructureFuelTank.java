@@ -17,7 +17,6 @@ import slimeknights.tconstruct.common.TinkerNetwork;
 import slimeknights.tconstruct.library.TinkerRegistry;
 import slimeknights.tconstruct.library.utils.TagUtil;
 import slimeknights.tconstruct.smeltery.TinkerSmeltery;
-import slimeknights.tconstruct.smeltery.block.BlockSearedFurnaceController;
 import slimeknights.tconstruct.smeltery.multiblock.MultiblockDetection;
 import slimeknights.tconstruct.smeltery.network.HeatingStructureFuelUpdatePacket;
 
@@ -168,8 +167,6 @@ public abstract class TileHeatingStructureFuelTank<T extends MultiblockDetection
   protected abstract int getUpdatedInventorySize(int width, int height, int depth);
 
   protected void dropItem(ItemStack stack) {
-    EnumFacing direction = getWorld().getBlockState(pos).getValue(BlockSearedFurnaceController.FACING);
-    BlockPos pos = this.getPos().offset(direction);
 
     EntityItem entityitem = new EntityItem(getWorld(), pos.getX(), pos.getY(), pos.getZ(), stack);
     getWorld().spawnEntity(entityitem);

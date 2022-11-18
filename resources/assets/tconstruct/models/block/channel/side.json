@@ -1,7 +1,7 @@
 {
     "textures": {
-        "particle": "tconstruct:blocks/smeltery/seared_stone",
-        "texture":  "tconstruct:blocks/smeltery/seared_stone"
+        "particle": "tconstruct:blocks/smeltery/seared/stone",
+        "texture":  "tconstruct:blocks/smeltery/seared/stone"
     },
     "elements": [
         {

@@ -1,15 +1,16 @@
 [{
     "modid": "tconstruct",
-    "name": "Binkers' Bonstruct",
-    "description": "The B makes the difference",
+    "name": "TFC: Tinkered",
+    "description": "Tinkers' Construct, just a bit more Tinkered.",
     "version": "${version}",
     "mcversion": "${MCversion}",
-    "url": "https://github.com/ACGaming/BinkersBonstruct",
+    "url": "https://github.com/Lylythii/Tinkered",
     "updateUrl": "",
     "authorList": [
+      "Lylythii",
+      "ACGaming",
       "boni",
-      "KnightMiner",
-      "ACGaming"
+      "KnightMiner"
     ],
     "credits": "Slime Knights, mDiyo, fuj1n, ProgWML6, Sunstrike, Pillbox",
     "logoFile": "logo.png",
