@@ -2,7 +2,7 @@
 
 ![](https://github.com/Lylythii/Tinkered/blob/1.12/resources/logo.png)
 
-[Tinkered](https://curseforge.com/minecraft/mc-mods/tinkered) is a fork of [Binkers' Bonstruct]](https://curseforge.com/minecraft/mc-mods/binkers-bonstruct), which in itself is a fork of [Tinkers' Construct](https://curseforge.com/minecraft/mc-mods/tinkers-construct), aiming to expand upon the mod TerraFirmaCraft.
+[Tinkered](https://curseforge.com/minecraft/mc-mods/tinkered) is a fork of [Binkers' Bonstruct](https://curseforge.com/minecraft/mc-mods/binkers-bonstruct), which in itself is a fork of [Tinkers' Construct](https://curseforge.com/minecraft/mc-mods/tinkers-construct), aiming to expand upon the mod TerraFirmaCraft.
 
 **List of changes:**
 * Configurable ingot/block/nugget/... values
